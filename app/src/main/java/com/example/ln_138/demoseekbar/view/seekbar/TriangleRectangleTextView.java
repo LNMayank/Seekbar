@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
+import android.graphics.RectF;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.TextView;
@@ -61,12 +62,26 @@ public class TriangleRectangleTextView extends TextView {
      * @param canvas
      */
     private void drawBackgroud(Canvas canvas){
+
+
         int height = getHeight();
         int width = getWidth();
         int triWidth=getWidth()/5;
         int triHeight=getHeight()/4;
         setPadding(0,0,0,triHeight);
 
+
+//        final RectF rect = new RectF();
+//        bgPaint.setStyle(Paint.Style.FILL);
+////
+//        rect.set(50, 50, 150, 150);
+//        canvas.drawRoundRect(rect, 10, 10, bgPaint);
+//
+//        rect.set(200, 150, 450, 350);
+//        canvas.drawRoundRect(rect, 30, 30, bgPaint);
+//
+//        bgPaint.setStyle(Paint.Style.FILL);
+//        rect.set(200, 400, 450, 600);
 
         Point a = new Point(0, 0);
         Point b = new Point(width, 0);
@@ -84,8 +99,10 @@ public class TriangleRectangleTextView extends TextView {
         path.lineTo(e.x, e.y);
         path.lineTo(f.x, f.y);
         path.lineTo(g.x, g.y);
+
         canvas.drawPath(path, bgPaint);
 
+//        canvas.drawRoundRect(rect, 50, 100, bgPaint);
 
     }
 }

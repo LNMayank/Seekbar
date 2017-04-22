@@ -8,6 +8,7 @@ import com.example.ln_138.demoseekbar.view.seekbar.SeekBar;
 
 public class MainActivity extends AppCompatActivity {
 
+
     SeekBar mSeekBar;
 // Test adeed
     @Override

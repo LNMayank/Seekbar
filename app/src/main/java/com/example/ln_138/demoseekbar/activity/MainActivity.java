@@ -6,7 +6,6 @@ import android.os.Bundle;
 import com.example.ln_138.demoseekbar.R;
 import com.example.ln_138.demoseekbar.view.seekbar.SeekBar;
 
-
 public class MainActivity extends AppCompatActivity {
 
 
